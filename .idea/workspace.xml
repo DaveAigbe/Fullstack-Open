@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 2nd Project" />
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 2nd Project">
+      <change afterPath="$PROJECT_DIR$/part-1/unicafe/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/unicafe/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/unicafe/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/unicafe/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/unicafe/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,17 +26,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open/part-1/unicafe",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dave/Documents/Web Development/Fullstack-Open/part-1/unicafe&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,6 +51,7 @@
       <workItem from="1663214533401" duration="1321000" />
       <workItem from="1663216499322" duration="28000" />
       <workItem from="1663216597858" duration="160000" />
+      <workItem from="1663224501505" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>

@@ -1,3 +1,8 @@
+
+body {
+    background: #207320;
+}
+
 .App {
     font-family: "Cascadia Mono", sans-serif;
     background-color: antiquewhite;
@@ -8,13 +13,13 @@
     justify-content: center;
     align-items: center;
     color: #207320;
-
+    border-radius: 20%;
 }
 
 .App button {
     margin: 4px;
     padding: 10px;
-    width: 60px;
+    width: 80px;
     background-color: saddlebrown;
     cursor: pointer;
     border: none;
@@ -31,4 +36,21 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.buttons {
+    position: absolute;
+    top: 20px;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+.top-anecdote {
+    width: 50%;
+}
+
+.top-anecdote p {
+    color: #d97d3b;
 }

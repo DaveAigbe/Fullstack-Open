@@ -1,0 +1,31 @@
+
+
+
+.App {
+    font-family: "Cascadia Mono";
+    background-color: antiquewhite;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #207320;
+
+}
+
+.App button {
+    margin: 4px;
+    padding: 10px;
+    width: 60px;
+    background-color: saddlebrown;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    color: white;
+}
+
+.App button:hover {
+    background-color: chocolate;
+}

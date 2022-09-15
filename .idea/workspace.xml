@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 2nd Project" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/part-1/app1" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EhcGe60IIBm6plwKDKNW8N3vru" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="" />
+      <created>1663051163399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663051163399</updated>
+      <workItem from="1663051165511" duration="22000" />
+      <workItem from="1663051488852" duration="78000" />
+      <workItem from="1663051815644" duration="239000" />
+      <workItem from="1663214533401" duration="1321000" />
+      <workItem from="1663216499322" duration="28000" />
+    </task>
+    <task id="LOCAL-00001" summary="- Added 2nd Project">
+      <created>1663051833295</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663051833295</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/part-1/app0" />
+      <path value="$PROJECT_DIR$/part-1/app1" />
+      <path value="$PROJECT_DIR$/part-1/unicafe" />
+    </ignored-roots>
+    <MESSAGE value="- Added 2nd Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added 2nd Project" />
+  </component>
+</project>

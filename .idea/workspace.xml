@@ -8,7 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/part-1/app1" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -27,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open",
+    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open/part-1/unicafe",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
@@ -46,6 +46,7 @@
       <workItem from="1663051815644" duration="239000" />
       <workItem from="1663214533401" duration="1321000" />
       <workItem from="1663216499322" duration="28000" />
+      <workItem from="1663216597858" duration="160000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>

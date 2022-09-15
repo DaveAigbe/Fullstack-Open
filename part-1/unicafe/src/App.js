@@ -9,12 +9,12 @@ const Button = ({text, onClick}) => {
     )
 }
 
-
 const StatisticsLine = ({text, value}) => {
     return (
-        <>
-            <p>{text}: {value}</p>
-        </>
+        <tr>
+            <td>{text}:</td>
+            <td>{value}</td>
+        </tr>
     )
 }
 
@@ -28,17 +28,22 @@ const Statistics = ({feedback}) => {
         <>
             {feedback.good || feedback.neutral || feedback.bad ?
                 (<section>
-                    <header>
-                        <h1>Statistics</h1>
-                    </header>
-                    <section>
+                    <table>
+                        <thead>
+                            <th>Count</th>
+                        </thead>
                         <StatisticsLine text={'Good'} value={feedback.good} />
                         <StatisticsLine text={'Neutral'} value={feedback.neutral} />
                         <StatisticsLine text={'Bad'} value={feedback.bad} />
-                        <p>All: {total}</p>
-                        <p>Average: {average}</p>
-                        <p>Positive: {positive} %</p>
-                    </section>
+                    </table>
+                    <table>
+                        <thead>
+                            <th>Calculations</th>
+                        </thead>
+                        <StatisticsLine text={'All'} value={total}/>
+                        <StatisticsLine text={'Average'} value={average} />
+                        <StatisticsLine text={'Positive'} value={`${positive} %`} />
+                    </table>
                 </section>)
                 :
                 (<h1>
@@ -75,13 +80,24 @@ function App() {
         <div className="App">
             <section>
                 <header>
-                    <h1>Give feedback</h1>
+                    <h1>Give Feedback</h1>
                 </header>
                 <Button text={'Good'} onClick={increaseGood}/>
                 <Button text={'Neutral'} onClick={increaseNeutral}/>
                 <Button text={'Bad'} onClick={increaseBad}/>
             </section>
-            <Statistics feedback={feedback}/>
+            <section>
+                <header>
+                    <h1>Statistics</h1>
+                </header>
+                <Statistics feedback={feedback}/>
+            </section>
+            <section>
+                <header>
+                    <h1>Generate Anecdote</h1>
+                </header>
+
+            </section>
         </div>
     );
 }

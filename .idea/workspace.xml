@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 2nd Project">
-      <change afterPath="$PROJECT_DIR$/part-1/unicafe/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part-1/unicafe/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/unicafe/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part-1/unicafe/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/unicafe/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 2nd Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +48,7 @@
       <workItem from="1663216499322" duration="28000" />
       <workItem from="1663216597858" duration="160000" />
       <workItem from="1663224501505" duration="20000" />
+      <workItem from="1663554467455" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>

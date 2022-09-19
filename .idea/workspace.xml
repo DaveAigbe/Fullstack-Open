@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 2nd Project" />
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 3rd Project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.idea/active-tab-highlighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.idea/active-tab-highlighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.idea/app0.iml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.idea/app0.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app0/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.idea/active-tab-highlighter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.idea/active-tab-highlighter.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.idea/app1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.idea/app1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/public/logo192.png" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/public/logo192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/greeting/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-1/app1/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-1/course-information/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +87,8 @@
       <workItem from="1663216597858" duration="160000" />
       <workItem from="1663224501505" duration="20000" />
       <workItem from="1663554467455" duration="60000" />
+      <workItem from="1663556385947" duration="55000" />
+      <workItem from="1663557102490" duration="691000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>
@@ -57,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663051833295</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Added 3rd Project">
+      <created>1663556411187</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663556411187</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +129,7 @@
       <path value="$PROJECT_DIR$/part-1/unicafe" />
     </ignored-roots>
     <MESSAGE value="- Added 2nd Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added 2nd Project" />
+    <MESSAGE value="- Added 3rd Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added 3rd Project" />
   </component>
 </project>

@@ -1,25 +1,31 @@
-const ContactForm = ({submitForm, nameFieldHandler, numberFieldHandler}) => {
+const ContactForm = ({submitForm, nameFieldHandler, numberFieldHandler }) => {
     return (
-        <section className={'contact_form'}>
-            <header>
-                <h2>New Contact</h2>
-            </header>
             <form onSubmit={submitForm}>
-                <div className={'contact_form__inputs'}>
-                    <section>
-                        <label htmlFor={'name'}>Name: </label>
-                        <input onChange={nameFieldHandler} id={'name'} required={true}/>
-                    </section>
-                    <section>
-                        <label htmlFor={'name'}>Number: </label>
-                        <input onChange={numberFieldHandler} id={'number'} required={true}/>
-                    </section>
+                <div className={'flex justify-center items-center flex-col gap-2'}>
+                    <table className={''}>
+                        <thead>
+                            <tr>
+                                <th className={'text-center'}>New Contact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label htmlFor={'name'}>Name: </label></td>
+                                <td><input className={'border-amber-900 border-2'} onChange={nameFieldHandler} id={'name'} required={true}/></td>
+                            </tr>
+                            <tr>
+                                <td><label htmlFor={'name'}>Number: </label></td>
+                                <td><input className={'border-amber-900 border-2'} onChange={numberFieldHandler} id={'number'} required={true}/></td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <div>
-                        <button type="submit">add</button>
+                        <button className={'bg-green-700 hover:bg-green-600 hover:scale-125 transition text-white font-bold py-2 px-4 rounded-full'} type="submit">
+                            Add
+                        </button>
                     </div>
                 </div>
             </form>
-        </section>
     );
 };
 

@@ -1,8 +1,11 @@
+import {Fragment} from 'react';
+
 const Person = ({name, number}) => {
     return (
-        <li>
-            {name}: {number}
-        </li>
+        <>
+            <td>{name}</td>
+            <td>{number}</td>
+        </>
     );
 };
 

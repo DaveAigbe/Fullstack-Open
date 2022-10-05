@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 3rd Project">
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Added 4th Project">
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.idea/active-tab-highlighter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.idea/country-data.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/components/CountriesList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/components/CountryData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/components/CountryLabel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/components/MatchOverload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/components/RenderCountries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/components/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/country-data/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/note-keeper/.idea/note-keeper.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/note-keeper/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/note-keeper/src/components/Notes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/phone-book/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/phone-book/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/part-2/phone-book/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/components/ContactForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/src/components/ContactForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/components/ContactList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/src/components/ContactList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/components/Person.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/src/components/Person.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/components/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/src/components/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part-2/phone-book/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/phone-book/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dave/Documents/Web Development/Fullstack-Open/part-1/unicafe&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open/part-2/country-data",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dave\Documents\Web Development\Fullstack-Open\part-2\phone-book" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +102,23 @@
       <workItem from="1663557102490" duration="691000" />
       <workItem from="1663636182047" duration="5000" />
       <workItem from="1663651260512" duration="396000" />
+      <workItem from="1663658468710" duration="123000" />
+      <workItem from="1663709931692" duration="517000" />
+      <workItem from="1663824255185" duration="559000" />
+      <workItem from="1663880843165" duration="25000" />
+      <workItem from="1663880924072" duration="34000" />
+      <workItem from="1663880985376" duration="1011000" />
+      <workItem from="1663885046123" duration="109000" />
+      <workItem from="1664219750479" duration="49000" />
+      <workItem from="1664323747600" duration="599000" />
+      <workItem from="1664405788106" duration="858000" />
+      <workItem from="1664415080017" duration="827000" />
+      <workItem from="1664484611499" duration="82000" />
+      <workItem from="1664485254805" duration="19000" />
+      <workItem from="1664487183193" duration="63000" />
+      <workItem from="1664489137305" duration="20000" />
+      <workItem from="1664607580304" duration="21000" />
+      <workItem from="1664931661886" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>
@@ -70,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663556411187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Added 4th Project">
+      <created>1663658507649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663658507649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,13 +160,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
-      <path value="$PROJECT_DIR$" />
       <path value="$PROJECT_DIR$/part-1/app0" />
       <path value="$PROJECT_DIR$/part-1/app1" />
       <path value="$PROJECT_DIR$/part-1/unicafe" />
+      <path value="$PROJECT_DIR$/part-2/javascript-exercises" />
     </ignored-roots>
     <MESSAGE value="- Added 2nd Project" />
     <MESSAGE value="- Added 3rd Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added 3rd Project" />
+    <MESSAGE value="- Added 4th Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added 4th Project" />
   </component>
 </project>

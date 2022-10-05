@@ -1,16 +1,24 @@
-import './App.css';
-import {useState} from 'react';
-import Search from './components/Search'
+import {useEffect, useState} from 'react';
+import Search from './components/Search';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
+import axios from 'axios';
+
+const getData = async (setPersons) => {
+    const res = axios.get('http://localhost:3001/persons');
+    const data = (await res).data;
+
+    setPersons(data);
+};
 
 const App = () => {
-    const [persons, setPersons] = useState([
-        {name: 'Arto Hellas', number: '040-123456', id: 1},
-        {name: 'Ada Lovelace', number: '39-44-5323523', id: 2},
-        {name: 'Dan Abramov', number: '12-43-234345', id: 3},
-        {name: 'Mary Poppendieck', number: '39-23-6423122', id: 4}
-    ]);
+
+    useEffect(() => {
+        getData(setPersons);
+    }, []);
+
+
+    const [persons, setPersons] = useState([]);
     const [newName, setNewName] = useState('');
     const [newNumber, setNewNumber] = useState('');
     const [search, setSearch] = useState('');
@@ -48,13 +56,16 @@ const App = () => {
     };
 
     return (
-        <div className={'App'}>
-            <header>
+        <div className={'h-screen w-screen bg-amber-300 flex flex-col items-center justify-center gap-6'}>
+            <header className={'underline font-bold text-2xl'}>
                 <h1>Phonebook</h1>
             </header>
-            <Search persons={persons} searchFieldHandler={searchFieldHandler} search={search}/>
-            <ContactForm submitForm={submitForm} nameFieldHandler={nameFieldHandler} numberFieldHandler={numberFieldHandler}/>
-            <ContactList persons={persons} search={search}/>
+            <div
+                className="bg-amber-500 transition shadow-2xl hover:bg-amber-600 flex flex-col items-center justify-center rounded-md gap-6 p-2">
+                <Search persons={persons} searchFieldHandler={searchFieldHandler} search={search}/>
+                <ContactForm submitForm={submitForm} nameFieldHandler={nameFieldHandler} numberFieldHandler={numberFieldHandler}/>
+                <ContactList persons={persons} search={search}/>
+            </div>
         </div>
     );
 };

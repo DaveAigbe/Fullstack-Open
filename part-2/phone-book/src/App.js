@@ -1,71 +1,133 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useReducer, useRef, useState} from 'react';
+import {addContact, deleteContact, editContact, getAll} from './services/contacts';
 import Search from './components/Search';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
-import axios from 'axios';
+import {Icon} from '@iconify/react';
 
-const getData = async (setPersons) => {
-    const res = axios.get('http://localhost:3001/persons');
-    const data = (await res).data;
+const reducer = (state, action) => {
+    switch (action.type) {
+        case 'handleSearch': {
+            return {...state, search: action.payload};
+        }
+        case 'handlePersons': {
+            return {...state, persons: action.payload};
+        }
+        case 'handleDelete': {
+            const selectedPerson = state.persons.find(person => person.id === action.payload);
 
-    setPersons(data);
+            if (window.confirm(`Are you sure you want to delete ${selectedPerson.name}`)) {
+                deleteContact(action.payload)
+                    .then((res) => console.log(res))
+                    .catch((err) => console.log(err));
+                const updatedPersons = state.persons.filter((contact) => contact.id !== action.payload);
+                return {...state, persons: updatedPersons};
+            }
+        }
+        case 'handleExisting': {
+            const selectedPerson = state.persons.find(person => person.id === action.payload);
+
+            if (window.confirm(`${selectedPerson.name} is already added to phonebook, replace the old number with new one?`)) {
+                editContact(action.payload, action.person)
+                    .then((res) => console.log(res))
+                    .catch((err) => console.log(err));
+            }
+            return state
+        }
+        default: {
+            return state;
+        }
+    }
 };
 
+
 const App = () => {
+    const [state, dispatch] = useReducer(reducer, {persons: [], search: ''});
+    const [loading, setLoading] = useState(true);
+    const nameRef = useRef('');
+    const numberRef = useRef('');
 
     useEffect(() => {
-        getData(setPersons);
-    }, []);
+        getAll().then((data) => {
+            setLoading(false);
+            handlePersons(data);
+        })
+            .catch((error) => console.log(error));
+    }, [state.persons]);
 
-
-    const [persons, setPersons] = useState([]);
-    const [newName, setNewName] = useState('');
-    const [newNumber, setNewNumber] = useState('');
-    const [search, setSearch] = useState('');
-
-    const nameFieldHandler = function (event) {
-        setNewName(event.target.value);
+    const handleSearchField = function (event) {
+        dispatch({
+            type: 'handleSearch',
+            payload: event.target.value
+        });
     };
 
-    const numberFieldHandler = function (event) {
-        setNewNumber(event.target.value);
+    const handlePersons = (newPersons) => {
+        dispatch({
+            type: 'handlePersons',
+            payload: newPersons
+        });
     };
 
-    const searchFieldHandler = function (event) {
-        setSearch(event.target.value);
+    const handleDelete = (id) => {
+        dispatch({
+            type: 'handleDelete',
+            payload: id
+        });
+    };
+
+    const handleExisting = (id, updatedPerson) => {
+        dispatch({
+            type: 'handleExisting',
+            payload: id,
+            person: updatedPerson
+        });
     };
 
     const submitForm = function (event) {
         event.preventDefault();
-        const emptyDuplicate = persons.map((person) => person.name)
-            .filter(person => person === newName);
+        const findDuplicate = state.persons.filter(person => person.name.toLowerCase() === nameRef.current.value.toLowerCase());
 
-        console.log(emptyDuplicate);
+        if (findDuplicate.length === 0) {
+            const newPerson = {name: nameRef.current.value, number: numberRef.current.value, id: state.persons.length + 1};
+            addContact(newPerson)
+                .then((response) => alert(response.statusText))
+                .catch(error => alert(error.message));
 
-        if (emptyDuplicate.length === 0) {
-            const newList = [...persons, {name: newName, number: newNumber, id: persons.length + 1}];
-            setPersons(newList);
-            window.alert(`${newName} has been added to the phonebook.`);
-
-            setNewName('');
-            document.getElementById('name').value = '';
-            document.getElementById('number').value = '';
+            const newList = [...state.persons, newPerson];
+            handlePersons(newList);
+            window.alert(`${nameRef.current.value} has been added to the phonebook.`);
         } else {
-            window.alert(`${newName} already exists!`);
+            const updatedPerson = {name: nameRef.current.value, number: numberRef.current.value, id: findDuplicate[0].id};
+            handleExisting(findDuplicate[0].id, updatedPerson);
         }
+        document.getElementById('name').value = '';
+        document.getElementById('number').value = '';
     };
 
     return (
         <div className={'h-screen w-screen bg-amber-300 flex flex-col items-center justify-center gap-6'}>
-            <header className={'underline font-bold text-2xl'}>
-                <h1>Phonebook</h1>
-            </header>
-            <div
-                className="bg-amber-500 transition shadow-2xl hover:bg-amber-600 flex flex-col items-center justify-center rounded-md gap-6 p-2">
-                <Search persons={persons} searchFieldHandler={searchFieldHandler} search={search}/>
-                <ContactForm submitForm={submitForm} nameFieldHandler={nameFieldHandler} numberFieldHandler={numberFieldHandler}/>
-                <ContactList persons={persons} search={search}/>
-            </div>
+            {loading ?
+                (
+                    <>
+                        <Icon className={'text-blue-700 text-8xl'} icon="line-md:loading-twotone-loop" color="blue"/>
+                    </>
+                )
+                :
+                (
+                    <>
+                        <header className={'underline font-bold text-2xl'}>
+                            <h1>Phonebook</h1>
+                        </header>
+                        <div
+                            className="bg-amber-500 transition shadow-2xl hover:bg-amber-600 flex flex-col items-center justify-center rounded-md gap-6 p-2">
+                            <Search persons={state.persons} searchFieldHandler={handleSearchField} search={state.search}/>
+                            <ContactForm submitForm={submitForm} nameRef={nameRef} numberRef={numberRef}/>
+                            <ContactList persons={state.persons} handleDelete={handleDelete} search={state.search}/>
+                        </div>
+                    </>
+                )
+            }
         </div>
     );
 };

@@ -32,7 +32,7 @@ function App() {
   }
 
   return (
-    <div className={'h-screen w-screen flex items-center justify-center bg-blue-700 from-blue-400 bg-gradient-to-r'}>
+    <div className={'min-h-screen w-screen flex items-center justify-center bg-blue-700 from-blue-400 bg-gradient-to-r'}>
       <div className={'flex flex-col justify-center items-center text-center gap-4'}>
         <h1 className={'text-3xl font-bold text-white'}>Country Finder</h1>
         <Search handleSearch={handleSearch}/>

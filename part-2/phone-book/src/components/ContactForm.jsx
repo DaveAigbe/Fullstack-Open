@@ -1,4 +1,4 @@
-const ContactForm = ({submitForm, nameFieldHandler, numberFieldHandler }) => {
+const ContactForm = ({submitForm, nameRef, numberRef }) => {
     return (
             <form onSubmit={submitForm}>
                 <div className={'flex justify-center items-center flex-col gap-2'}>
@@ -11,11 +11,11 @@ const ContactForm = ({submitForm, nameFieldHandler, numberFieldHandler }) => {
                         <tbody>
                             <tr>
                                 <td><label htmlFor={'name'}>Name: </label></td>
-                                <td><input className={'border-amber-900 border-2'} onChange={nameFieldHandler} id={'name'} required={true}/></td>
+                                <td><input className={'border-amber-900 border-2'} ref={nameRef} id={'name'} required={true}/></td>
                             </tr>
                             <tr>
                                 <td><label htmlFor={'name'}>Number: </label></td>
-                                <td><input className={'border-amber-900 border-2'} onChange={numberFieldHandler} id={'number'} required={true}/></td>
+                                <td><input className={'border-amber-900 border-2'} ref={numberRef} id={'number'} required={true}/></td>
                             </tr>
                         </tbody>
                     </table>

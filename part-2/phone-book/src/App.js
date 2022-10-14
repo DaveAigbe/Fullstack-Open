@@ -14,25 +14,34 @@ const reducer = (state, action) => {
             return {...state, persons: action.payload};
         }
         case 'handleDelete': {
-            const selectedPerson = state.persons.find(person => person.id === action.payload);
+            const deletePerson = state.persons.find(person => person.id === action.payload);
 
-            if (window.confirm(`Are you sure you want to delete ${selectedPerson.name}`)) {
+            if (window.confirm(`Are you sure you want to delete ${deletePerson.name}`)) {
                 deleteContact(action.payload)
                     .then((res) => console.log(res))
                     .catch((err) => console.log(err));
+
                 const updatedPersons = state.persons.filter((contact) => contact.id !== action.payload);
                 return {...state, persons: updatedPersons};
             }
         }
         case 'handleExisting': {
-            const selectedPerson = state.persons.find(person => person.id === action.payload);
+            // Grab person by their id
+            const changePerson = state.persons.find(person => person.id === action.payload);
+            // Find the index of that person
+            const changePersonIndex = state.persons.indexOf(changePerson)
 
-            if (window.confirm(`${selectedPerson.name} is already added to phonebook, replace the old number with new one?`)) {
+            if (window.confirm(`${changePerson.name} is already added to phonebook, replace the old number with new one?`)) {
                 editContact(action.payload, action.person)
                     .then((res) => console.log(res))
                     .catch((err) => console.log(err));
             }
-            return state
+
+            // Create a new copy of previous array and update the information at the index found above
+            const updatedPersons = [...state.persons]
+            updatedPersons[changePersonIndex] = action.person
+
+            return {...state, persons: updatedPersons}
         }
         default: {
             return state;
@@ -53,7 +62,7 @@ const App = () => {
             handlePersons(data);
         })
             .catch((error) => console.log(error));
-    }, [state.persons]);
+    }, []);
 
     const handleSearchField = function (event) {
         dispatch({

@@ -4,6 +4,7 @@ import Search from './components/Search';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
 import {Icon} from '@iconify/react';
+import {AlertMessage} from './components/AlertMessage';
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -24,12 +25,13 @@ const reducer = (state, action) => {
                 const updatedPersons = state.persons.filter((contact) => contact.id !== action.payload);
                 return {...state, persons: updatedPersons};
             }
+            return
         }
         case 'handleExisting': {
             // Grab person by their id
             const changePerson = state.persons.find(person => person.id === action.payload);
             // Find the index of that person
-            const changePersonIndex = state.persons.indexOf(changePerson)
+            const changePersonIndex = state.persons.indexOf(changePerson);
 
             if (window.confirm(`${changePerson.name} is already added to phonebook, replace the old number with new one?`)) {
                 editContact(action.payload, action.person)
@@ -38,10 +40,10 @@ const reducer = (state, action) => {
             }
 
             // Create a new copy of previous array and update the information at the index found above
-            const updatedPersons = [...state.persons]
-            updatedPersons[changePersonIndex] = action.person
+            const updatedPersons = [...state.persons];
+            updatedPersons[changePersonIndex] = action.person;
 
-            return {...state, persons: updatedPersons}
+            return {...state, persons: updatedPersons};
         }
         default: {
             return state;
@@ -53,6 +55,7 @@ const reducer = (state, action) => {
 const App = () => {
     const [state, dispatch] = useReducer(reducer, {persons: [], search: ''});
     const [loading, setLoading] = useState(true);
+    const [alert, setAlert] = useState(null);
     const nameRef = useRef('');
     const numberRef = useRef('');
 
@@ -105,7 +108,11 @@ const App = () => {
 
             const newList = [...state.persons, newPerson];
             handlePersons(newList);
-            window.alert(`${nameRef.current.value} has been added to the phonebook.`);
+
+            setAlert(`${nameRef.current.value} has been added to the phonebook.`)
+            setTimeout(() => {
+                setAlert('')
+            }, 5000)
         } else {
             const updatedPerson = {name: nameRef.current.value, number: numberRef.current.value, id: findDuplicate[0].id};
             handleExisting(findDuplicate[0].id, updatedPerson);
@@ -129,7 +136,9 @@ const App = () => {
                             <h1>Phonebook</h1>
                         </header>
                         <div
-                            className="bg-amber-500 transition shadow-2xl hover:bg-amber-600 flex flex-col items-center justify-center rounded-md gap-6 p-2">
+                            className="bg-amber-500 transition shadow-2xl hover:bg-amber-600 flex flex-col items-center justify-center rounded-md gap-6 p-2"
+                        >
+                            {alert && <AlertMessage message={alert} color={alert.includes('added') ? 'green' : 'red' }/>}
                             <Search persons={state.persons} searchFieldHandler={handleSearchField} search={state.search}/>
                             <ContactForm submitForm={submitForm} nameRef={nameRef} numberRef={numberRef}/>
                             <ContactList persons={state.persons} handleDelete={handleDelete} search={state.search}/>

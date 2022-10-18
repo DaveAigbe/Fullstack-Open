@@ -2,12 +2,14 @@ import './App.css';
 import Note from './components/Note';
 import {useEffect, useState} from 'react';
 import notesService from './services/notesService';
+import {Notification} from './components/Notification';
 
 
 const App = () => {
     const [notes, setNotes] = useState([]);
     const [newNote, setNewNote] = useState('You can add a "services" folder to handle request types and export them after.');
-    // const [showAll, setShowAll] = useState(true);
+    const [errorMessage, setErrorMessage] = useState(null);
+    const [successMessage, setSuccessMessage] = useState(null);
 
     useEffect(() => {
         return () => {
@@ -35,6 +37,11 @@ const App = () => {
             .then(res => {
                 setNotes([...notes, res]);
                 setNewNote('');
+
+                setSuccessMessage(`Note was successfully added to server!`);
+                setTimeout(() => {
+                    setSuccessMessage(null);
+                }, 5000);
             });
     };
 
@@ -48,7 +55,10 @@ const App = () => {
                 setNotes(notes.map(note => note.id !== id ? note : res));
             })
             .catch(() => {
-                alert(`the note '${note.content}' was already deleted from server`);
+                setErrorMessage(`Note '${note.content}' was already removed from server`);
+                setTimeout(() => {
+                    setErrorMessage(null);
+                }, 5000);
                 setNotes(notes.filter(n => n.id !== id));
             });
     };
@@ -57,6 +67,8 @@ const App = () => {
     return (
         <div>
             <h1>Notes</h1>
+            <Notification color={'red'} message={errorMessage}/>
+            <Notification color={'green'} message={successMessage}/>
             <ul>
                 {notes.map(note =>
                     <Note key={note.id} note={note} toggleImportance={() => toggleImportanceOf(note.id)}/>

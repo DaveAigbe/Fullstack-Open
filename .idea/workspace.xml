@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Updated phone book project">
-      <change afterPath="$PROJECT_DIR$/part-2/note-keeper/src/components/Notification.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part-2/note-keeper/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/note-keeper/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part-2/note-keeper/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/part-2/note-keeper/src/App.js" afterDir="false" />
-    </list>
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +26,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open/part-2/phone-book",
+    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open/part 3",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
@@ -97,6 +93,7 @@
       <workItem from="1665730399802" duration="12000" />
       <workItem from="1665732934628" duration="424000" />
       <workItem from="1665814495820" duration="15000" />
+      <workItem from="1666072004689" duration="90000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>
@@ -133,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665733191958</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- Updated">
+      <created>1666072077143</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666072077143</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +165,7 @@
     <MESSAGE value="- Added 3rd Project" />
     <MESSAGE value="- Added 4th Project" />
     <MESSAGE value="- Updated phone book project" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Updated phone book project" />
+    <MESSAGE value="- Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Updated" />
   </component>
 </project>

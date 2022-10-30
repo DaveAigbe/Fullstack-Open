@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Updated" />
+    <list default="true" id="c887cb77-cb2c-48a8-a3a6-7354f334db48" name="Changes" comment="- Updated">
+      <change afterPath="$PROJECT_DIR$/part 3/persons-server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 3/express-simple-server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/part 3/express-simple-server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/part 3/express-simple-server/http-requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/part 3/express-simple-server/http-requests.http" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,18 +27,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Dave/Documents/Web Development/Fullstack-Open/part 3",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.9.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.11.3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dave/Documents/Web Development/Fullstack-Open/part 3&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -94,6 +101,9 @@
       <workItem from="1665732934628" duration="424000" />
       <workItem from="1665814495820" duration="15000" />
       <workItem from="1666072004689" duration="90000" />
+      <workItem from="1666339246550" duration="104000" />
+      <workItem from="1666683453880" duration="15000" />
+      <workItem from="1666945984537" duration="96000" />
     </task>
     <task id="LOCAL-00001" summary="- Added 2nd Project">
       <created>1663051833295</created>
@@ -137,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666072077143</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Updated">
+      <created>1666339342313</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666339342313</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

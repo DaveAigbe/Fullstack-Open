@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Terry Bradshaw",
+  "number": "654-321-4468"
+}
+
+###
+DELETE http://localhost:3001/api/persons/1
+

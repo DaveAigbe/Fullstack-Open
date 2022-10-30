@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+
+{
+  "content": "A callback function is one that is called after the function it is passed to"
+}
+
+###
+GET http://localhost:3001/api/notes
